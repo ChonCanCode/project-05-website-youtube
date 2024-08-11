@@ -1,0 +1,134 @@
+body {
+    font-family: 'inter', sans-serif;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerItem.one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerItem.one .buttonContainer {
+    border: none;
+    margin-right: 10px;
+}
+
+.headerItem.one i.fa-youtube {
+    font-size: 24px;
+    color: red;
+    margin-right: 8px; /* Space between the YouTube icon and the text */
+}
+
+.headerItem.one p{
+    display: inline-block;
+    line-height: 1;
+    font-size: 1.2em;
+    font-weight: 750;
+}
+
+.headerItem.one p span{
+    font-size: 8px;
+    vertical-align: top;
+}
+.headerItem.two {
+    flex-direction: row;
+    
+}
+
+.headerItem.two input{
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    background: none;
+}
+.headerItem.three {
+    flex-direction: row;
+    padding: 8px;
+    
+}
+
+.headerItem.three img{
+    border-radius: 100px;
+    width: 24px;
+}
+
+.bodyItem {
+    margin-top: 15px;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyItem .videoplayer {
+ border-radius: 8px;
+ width: 100%;
+ height: auto;
+ aspect-ratio: 16/9;
+}
+
+.bodyItem .videoTitle{
+    margin-top: 2px;
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.bodyItem .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bodyItem .description img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.bodyItem .description .channelDetails {
+    display: flex;
+    flex-direction: column; /* Stack the channel name and subscriber count vertically */
+    margin-right: auto; /* Pushes .likeAndDislike to the right */
+}
+
+.bodyItem .description p {
+    line-height: 1.2;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.hurskiChannel {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.hurskiChannel1 {
+    font-size: 0.85rem;
+    color: #555; /* Optional: a lighter color to differentiate from the channel name */
+}
+
+.description .likeAndDislike {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.description .likeAndDislike button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid #CCC;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
