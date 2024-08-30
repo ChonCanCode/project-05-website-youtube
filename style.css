@@ -1,3 +1,10 @@
+
+
+:root {
+   --button-color: #f1f1f1;
+}
+
+
 body {
    font-family: 'inter', sans-serif;
    padding: 10px;
@@ -54,43 +61,36 @@ body {
 /* Header item 2 */
 .headerItem.two {
    flex-direction: row;
-   
-}
-
-/* Learn this
-.headerItem.two input{
-   outline: none;
-   border-radius: 10px;
-   border: 1px solid #ccc;
-   box-shadow: none;
-   background: none;
 }
 
 .headerItem.two {
-   display: flex; /* Align input and button in a row *
+   display: flex; 
    align-items: center;
 }
 
 .headerItem.two input {
    border: 1px solid #ccc;
-   border-radius: 20px 0 0 20px; /* Rounded left border, straight right border *
+   border-radius: 20px 0 0 20px;
    padding: 8px 12px;
    outline: none;
-   flex-grow: 1; /* Makes the input take up available space *
+   flex-grow: 1; 
+   width: 450px;
+   height: 10px
 }
 
 .headerItem.two button {
    border: 1px solid #ccc;
-   border-left: none; /* Removes the left border between the input and button *
-   border-radius: 0 20px 20px 0; /* Straight left border, rounded right border *
+   border-left: none; 
+   border-radius: 0 20px 20px 0; 
    padding: 8px 12px;
-   background-color: #f1f1f1; /* Optional: Add background color to the button *
+   background-color: var(--button-color); 
    cursor: pointer;
    display: flex;
    align-items: center;
    justify-content: center;
+   height: 28px
 }
-*/
+
 
 /* Header item 3 */
 .headerItem.three {
@@ -101,52 +101,76 @@ body {
    gap: 10px
 }
 
+.headerItem.three button{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #ccc;
+   background: var(--button-color);
+   border-radius: 100%;
+   width: 28px;
+   height: 28px;
+}
+
 .headerItem.three img{
    border-radius: 100px;
    width: 24px;
 }
 
+/* Body items */
 .bodyItem {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.bodyItemOne {
    margin-top: 15px;
-   width:60%;
+   width: 60%;
    display: flex;
    flex-direction: column;
 }
 
-.bodyItem .videoplayer {
+.videoplayer {
 border-radius: 8px;
 width: 100%;
 height: auto;
 aspect-ratio: 16/9;
 }
 
-.bodyItem .videoTitle{
+.videoTitle{
    margin-top: 2px;
    font-size: 1rem;
    font-weight: 650;
 }
 
-.bodyItem .description {
+.description {
    display: flex;
    align-items: center;
    justify-content: space-between;
    width: 100%;
 }
 
-.bodyItem .description img {
+.description img {
    border-radius: 50%;
    width: 35px;
    height: 35px;
    margin-right: 10px;
 }
 
-.bodyItem .description .channelDetails {
+.description .channelDetails {
    display: flex;
-   flex-direction: column; /* Stack the channel name and subscriber count vertically */
+   flex-direction: row; /* Stack the channel name and subscriber count vertically */
    margin-right: auto; /* Pushes .likeAndDislike to the right */
 }
 
-.bodyItem .description p {
+.channelDetailsSub {
+   display: flex;
+   flex-direction: column;
+}
+
+.description p {
    line-height: 1.2;
    font-size: 0.85rem;
    margin: 0;
@@ -169,10 +193,95 @@ aspect-ratio: 16/9;
    gap: 10px;
 }
 
-.description .likeAndDislike button {
+.description button {
    cursor: pointer;
-   background: none;
-   border: 1px solid #CCC;
-   border-radius: 7px;
+   background: var(--button-color);
+   border: none;
+   border-radius: 25px;
    padding: 5px 10px;
+}
+
+.likeAndDislike button{
+   height:30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap:5px
+}
+
+.bodyItemTwo {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   align-items: center;
+   margin-right: 10px;
+   overflow: hidden;
+}
+
+.bi-two-options {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   overflow-x: auto;
+}
+
+.bi-two-p {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   font-size: 0.8rem;
+   margin-top: 28px;
+   margin-bottom: 48px;
+}
+
+.bi-two-options button{
+   display: inline-block;
+   flex-direction: row;
+   align-items: center;
+
+   border: none;
+   background: var(--button-color);
+   cursor: pointer;
+   border-radius: 8px;
+   height: 30px;
+   font-weight: 600;
+   padding: 10px;
+   box-sizing: border-box;
+   width: auto;
+   font-size: 0.75rem;
+   white-space: nowrap;
+}
+
+.bi-two-options-container {
+   display: flex;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   gap:10px;
+}
+
+.arrow {
+   border: none;
+   background: var(--button-color);
+   cursor: pointer;
+   border-radius: 50%;
+   height: 32px;
+   width: 32px;
+   display: flex; /* Flexbox to center content */
+   justify-content: center; /* Center horizontally */
+   align-items: center; /* Center vertically */
+   padding: 0; /* Remove padding to ensure perfect circle */
+   font-size: 1rem;
+   z-index: 1;
+   position: absolute;
+}
+
+
+.left-arrow {
+   left: 0;
+}
+
+.right-arrow {
+   right: 0;
 }

@@ -13,7 +13,7 @@
 <body>
     <!-- Header session-->
      <div class="header">
-        <!-- Header items -->
+        <!-- H.one -->
          <div class="headerItem one">
             <div class="buttonContainer">
             <button><i class="fa-solid fa-bars"></i></button>
@@ -21,12 +21,12 @@
             <button><i class="fa-brands fa-youtube"></i></button>
             <p>Hetube<span>GB</span></p>
          </div>
-
+         <!-- H.two -->
          <div class="headerItem two">
             <input type="text" placeholder="Search" ></i>
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
          </div>
-
+         <!-- H.three -->
          <div class="headerItem three">
             <button><i class="fa-solid fa-video"></i></button>
             <button><i class="fa-regular fa-bell"></i></button>
@@ -36,28 +36,49 @@
 
      <!-- Body session -->
       <div>
-        <!-- Body items -->
-        <div>
-            <div class="bodyItem">
+        <!-- Body items left side -->
+        <div class="bodyItem">
+            <div class="bodyItemOne">
                <iframe class="videoplayer" width="100%" height="100%" src="https://www.youtube.com/embed/seP4dkPtXPI?si=6kgEni53bZyifS1m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                <p class="videoTitle">The Strongest Bison on Earth!</p>
                <div class="description">
                   <img src="/img/unnamed.jpg" alt="User Icon">
                   <div class="channelDetails">
+                     <div class="channelDetailsSub">
                      <p class="hurskiChannel">Hurski Channel</p>
                      <p class="hurskiChannel1">1.81m Subscribers</p>
-                  </div>
-                  <div class="likeAndDislike">
+                     </div>
                      <button>Analytics</button>
                      <button>Edit Video</button>
-                     <button class="like"><i class="fa-regular fa-thumbs-up"></i></button>
-                     <button class="dislike"><i class="fa-regular fa-thumbs-down"></i></button>
-                     <button class="shareButton"><i class="fa-solid fa-share"></i></button>
+                  </div>
+                  <div class="likeAndDislike">
+                     <button class="like"><i class="fa-regular fa-thumbs-up"></i><p>51k</p></button>
+                     <button class="dislike"><i class="fa-regular fa-thumbs-down"></i><p>-100</p></button>
+                     <button class="shareButton"><i class="fa-solid fa-share"></i><p>Share</p></button>
                      <button class="moreButton"><i class="fa-solid fa-ellipsis"></i></button>
                   </div>
                </div>
             </div>
-        </div>
+        <!-- Body items right side -->
+         <div class="bodyItemTwo">
+               <div>
+                  <p class="bi-two-p">Live chat replay has been turned off for this video.</p>
+               </div>
+               <div class="bi-two-options-container">
+                  <button class="fa-solid fa-angle-left left-arrow arrow"></button>
+                  <div class="bi-two-options">
+                     <button>All</button>
+                     <button>Street Fighter 6</button>
+                     <button>Related</button>
+                     <button>For you</button>
+                     <button>Live</button>
+                     <button>Recent uploaded</button>
+                     <button>Recent uploaded</button>
+                     <button>Recent uploaded</button>
+                  </div>
+               <button class="fa-solid fa-angle-right right-arrow arrow"></button>
+            </div>
+         </div>
       </div>
 
       <!-- Footer session -->
@@ -71,6 +92,6 @@
        </div>
 
 
-    <script src="main.js"></script>
+       <script src="main.js"></script>
 </body>
 </html> 
