@@ -217,6 +217,7 @@ aspect-ratio: 16/9;
    align-items: center;
    margin-right: 10px;
    overflow: hidden;
+   margin-left: 10px;
 }
 
 .bi-two-options {
@@ -239,7 +240,6 @@ aspect-ratio: 16/9;
    display: inline-block;
    flex-direction: row;
    align-items: center;
-
    border: none;
    background: var(--button-color);
    cursor: pointer;
@@ -268,7 +268,7 @@ aspect-ratio: 16/9;
    border-radius: 50%;
    height: 32px;
    width: 32px;
-   display: flex; /* Flexbox to center content */
+   display: flex; 
    justify-content: center; /* Center horizontally */
    align-items: center; /* Center vertically */
    padding: 0; /* Remove padding to ensure perfect circle */
@@ -285,3 +285,62 @@ aspect-ratio: 16/9;
 .right-arrow {
    right: 0;
 }
+
+.bi-two-video-preview-container {
+   margin-top: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+}
+
+.bi-two-video-preview {
+   border-radius: 8px;
+   width: 180px;
+   height: auto;
+   aspect-ratio: 16/9;
+   }
+
+.bi-two-video-preview-p-container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-left: 5px;
+   padding: none;
+}
+
+.bi-two-video-preview-p-container p{
+   display: flex;
+   flex-direction: row;
+   margin: 0;
+   padding: 0;
+}
+
+.bi-two-p1 {
+      font-size: 1.2rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 2.4em; 
+      line-height: 1.2em; 
+}
+
+
+.bi-two-p2 {
+   font-size: 0.74rem;
+}
+
+
+.bi-two-video-preview-container-others {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   margin-bottom: 10px;
+}
+
+
